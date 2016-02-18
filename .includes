@@ -1,0 +1,11 @@
+source ~/.dotfiles/.aliases
+source ~/.dotfiles/.credentials
+source ~/.dotfiles/.functions
+source ~/.dotfiles/.path
+
+# for file in ~/.{path,profile,exports,bash_prompt,aliases,functions,extra}; do
+# 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+# done
+# unset file
+
+# source ~/.dotfiles/.functions_ext #????

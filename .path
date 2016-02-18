@@ -1,0 +1,10 @@
+# Go Lang
+export GOPATH=/Users/tylerbuchea/go/
+PATH=$GOPATH/bin:$PATH
+
+# Node.JS
+#export NODE_PATH=$NODE_PATH:/Users/tylerbuchea/.nvm/versions/node/v0.12.7/lib/node_modules
+
+# Android SDK
+export PATH=${PATH}:/Users/tylerbuchea/Library/Android/sdk/platform-tools:/Users/tylerbuchea/Library/Android/sdk/tools
+export ANDROID_HOME=/Users/tylerbuchea/Library/Android/sdk

@@ -1,0 +1,18 @@
+# Git Commands
+alias gpersist="git config credential.helper 'cache --timeout=3600'"
+# alias gs="git status"
+# alias gr="git reset ."
+# gc() { git commit -m "$1"; }
+# gst() { git subtree push --prefix "$1" origin "$2"; }
+alias gpst="git subtree push --prefix dist origin dist"
+alias gpgp="git subtree push --prefix dist origin gh-pages"
+# alias gb="git branch"
+# alias gdt="git difftool"
+# alias gmt="git mergetool"
+# alias gcm="git commit -m \"\""
+
+# General Commands
+alias sourcez="source ~/.zshrc"
+alias c="clear"
+# alias t="trash"
+# alias lz='find . -maxdepth 1 -type d -mindepth 1 -exec du -hs {} \'

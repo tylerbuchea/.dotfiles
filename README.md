@@ -21,7 +21,6 @@ git clone https://github.com/tylerbuchea/.dotfiles.git
 atom ~/.dotfiles
 # OR
 subl ~/.dotfiles
-
 ```
 
 ## Add to .zshrc
@@ -29,7 +28,14 @@ subl ~/.dotfiles
 ```
 echo "source ~/.dotfiles/.includes" >> ~/.zshrc
 source ~/.zshrc
+```
 
+## Add .credentials
+
+**I didn't want to commit my credentials file so create your own even if it's just blank for now:**
+
+```
+echo '' > ~/.dotfiles/.credentials
 ```
 
 ## Plugins
@@ -38,5 +44,9 @@ source ~/.zshrc
 
 ```
 plugins=(git z)
-
 ```
+
+## Why ZSH?
+**Cuz this:**
+
+http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692

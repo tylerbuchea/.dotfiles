@@ -1,17 +1,17 @@
 # Tyler's Dotfiles
 
-**The Coolest**
+## The Coolest
 
-## Install iTerm2
+### Install iTerm2
 https://www.iterm2.com/
 
-## Install ZSH
+### Install ZSH
 https://github.com/robbyrussell/oh-my-zsh
 
-## Add Theme
+### Add Theme
 https://github.com/wesbos/Cobalt2-iterm
 
-## Clone Repo into ~
+### Clone Repo into ~
 
 ```
 cd ~
@@ -23,14 +23,14 @@ atom ~/.dotfiles
 subl ~/.dotfiles
 ```
 
-## Add to .zshrc
+### Add to .zshrc
 
 ```
 echo "source ~/.dotfiles/.includes" >> ~/.zshrc
 source ~/.zshrc
 ```
 
-## Add .credentials
+### Add .credentials
 
 **I didn't want to commit my credentials file so create your own even if it's just blank for now:**
 
@@ -38,7 +38,7 @@ source ~/.zshrc
 echo '' > ~/.dotfiles/.credentials
 ```
 
-## Plugins
+### Plugins
 
 **My plugins list in .zshrc**
 
@@ -46,7 +46,7 @@ echo '' > ~/.dotfiles/.credentials
 plugins=(git z)
 ```
 
-## Why ZSH?
+### Why ZSH?
 **Cuz this:**
 
 http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692

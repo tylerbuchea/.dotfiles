@@ -21,3 +21,6 @@ alias c="clear"
 # React Native
 alias rnios="react-native run-ios"
 alias rnandroid="react-native run-android"
+
+# Peerflix
+alias peerflix-clear="rm -rf /tmp/torrent-stream/*"

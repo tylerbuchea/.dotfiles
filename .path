@@ -1,13 +1,17 @@
 # Go Lang
-export GOPATH=/Users/tylerbuchea/go/
+export GOPATH=$HOME/go/
 PATH=$GOPATH/bin:$PATH
 
 # Node.JS
-#export NODE_PATH=$NODE_PATH:/Users/tylerbuchea/.nvm/versions/node/v0.12.7/lib/node_modules
+#export NODE_PATH=$NODE_PATH:$HOME/.nvm/versions/node/v0.12.7/lib/node_modules
 
 # Android SDK
-export PATH=${PATH}:/Users/tylerbuchea/Library/Android/sdk/platform-tools:/Users/tylerbuchea/Library/Android/sdk/tools
-export ANDROID_HOME=/Users/tylerbuchea/Library/Android/sdk
+export PATH=${PATH}:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
+# rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

@@ -18,6 +18,10 @@ alias c="clear"
 # alias t="trash"
 # alias lz='find . -maxdepth 1 -type d -mindepth 1 -exec du -hs {} \'
 
+# ESLint
+
+# alias eslintrc="npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint && echo '\''{ extends: [airbnb], }'\'' > .eslintrc"
+
 # React Native
 alias rnios="react-native run-ios"
 alias rnandroid="react-native run-android"

@@ -20,11 +20,17 @@ alias c="clear"
 
 # ESLint
 
+# Ableton
+alias ableton="/Users/tylerbuchea/Desktop/Ableton/ableton/start-ableton.sh"
+
 # alias eslintrc="npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint && echo '\''{ extends: [airbnb], }'\'' > .eslintrc"
 
 # React Native
 alias rnios="react-native run-ios"
 alias rnandroid="react-native run-android"
+
+# PostgreSQL
+alias psql-start="pg_ctl -D /usr/local/var/postgres -l logfile start"
 
 # Peerflix
 alias peerflix-clear="rm -rf /tmp/torrent-stream/*"

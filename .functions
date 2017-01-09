@@ -44,6 +44,13 @@ function path () {
   fi
 }
 
+# Clean React Native Project
+function rnreset() {
+	watchman watch-del-all
+	rm -rf node_modules && yarn install
+	npm start -- --reset-cache
+}
+
 # Start an HTTP server from a directory, optionally specifying the port
 function server() {
 	local port="${1:-8000}"

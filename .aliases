@@ -33,6 +33,7 @@ alias rnandroidlog="react-native log-android"
 
 # PostgreSQL
 alias psql-start="pg_ctl -D /usr/local/var/postgres -l logfile start"
+alias psql-stop="pg_ctl -D /usr/local/var/postgres -l logfile stop"
 
 # Peerflix
 alias peerflix-clear="rm -rf /tmp/torrent-stream/*"

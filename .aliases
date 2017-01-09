@@ -27,7 +27,9 @@ alias ableton="/Users/tylerbuchea/Desktop/Ableton/ableton/start-ableton.sh"
 
 # React Native
 alias rnios="react-native run-ios"
+alias rnioslog="react-native log-ios"
 alias rnandroid="react-native run-android"
+alias rnandroidlog="react-native log-android"
 
 # PostgreSQL
 alias psql-start="pg_ctl -D /usr/local/var/postgres -l logfile start"

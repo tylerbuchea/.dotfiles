@@ -26,10 +26,9 @@ alias ableton="/Users/tylerbuchea/Desktop/Ableton/ableton/start-ableton.sh"
 # alias eslintrc="npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint && echo '\''{ extends: [airbnb], }'\'' > .eslintrc"
 
 # React Native
-alias rnios="react-native run-ios"
-alias rnioslog="react-native log-ios"
-alias rnandroid="react-native run-android"
-alias rnandroidlog="react-native log-android"
+alias rnlogios="react-native log-ios"
+alias rnlogand="react-native log-android"
+alias rnadb="adb reverse tcp:8081 tcp:8081"
 
 # PostgreSQL
 alias psql-start="pg_ctl -D /usr/local/var/postgres -l logfile start"

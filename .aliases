@@ -36,3 +36,6 @@ alias psql-stop="pg_ctl -D /usr/local/var/postgres -l logfile stop"
 
 # Peerflix
 alias peerflix-clear="rm -rf /tmp/torrent-stream/*"
+
+# Markdown Converter
+alias md="markdown-pdf"

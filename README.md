@@ -32,10 +32,10 @@ source ~/.zshrc
 
 ### Add .credentials
 
-**I didn't want to commit my credentials file so create your own even if it's just blank for now:**
+**Copy credentials and change them to your own**
 
 ```
-echo '' > ~/.dotfiles/.credentials
+cp ~/.dotfiles/.credentials_example ~/.dotfiles/.credentials
 ```
 
 ### Plugins

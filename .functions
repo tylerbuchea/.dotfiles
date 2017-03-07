@@ -22,6 +22,13 @@
 #   mkdir "$1" && d "$1"
 # }
 
+# SSH
+
+# $1 == USER@HOST
+function installssh() {
+	cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+}
+
 # Make directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$@"

@@ -1,5 +1,5 @@
 # Add whatever you want to the list
-for file in ~/.dotfiles/.{path,aliases,credentials,functions,functions_ext}; do
+for file in ~/.dotfiles/.{prompt,path,aliases,credentials,functions,functions_ext}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file

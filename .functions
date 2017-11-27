@@ -29,6 +29,12 @@ function ca() {
 	cd $1
 }
 
+# Docker SSH
+
+function dssh() {
+	docker exec -it $1 /bin/bash
+}
+
 # SSH
 
 # $1 == USER@HOST

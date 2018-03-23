@@ -19,3 +19,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Editor Setting
 export EDITOR=vim
+
+# Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"

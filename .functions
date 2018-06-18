@@ -90,9 +90,9 @@ function serverold() {
 }
 
 # This one is for the Python v3
-function server() {
+function pythonserver() {
 	local port="${1:-8000}"
-	python -m http.server $port
+	python3 -m http.server $port
 }
 
 # Start a PHP server from a directory, optionally specifying the port

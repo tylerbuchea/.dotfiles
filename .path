@@ -22,3 +22,6 @@ export EDITOR=vim
 
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# added by Miniconda3 installer
+export PATH="/Users/tylerbuchea/miniconda3/bin:$PATH"

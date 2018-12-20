@@ -43,3 +43,6 @@ alias peerflix-clear="rm -rf /tmp/torrent-stream/*"
 
 # Markdown Converter
 alias md="markdown-pdf"
+
+# View Last 3 Git Tags
+alias prevtags="git tag --sort=taggerdate | tail -n3"

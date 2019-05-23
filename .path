@@ -1,9 +1,9 @@
+# Global Scripts
+export PATH=~/.dotfiles/bin:$PATH
+
 # Go Lang
 export GOPATH=$HOME/go/
 PATH=$GOPATH/bin:$PATH
-
-# Node.JS
-#export NODE_PATH=$NODE_PATH:$HOME/.nvm/versions/node/v0.12.7/lib/node_modules
 
 # Android SDK
 export PATH=${PATH}:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools
@@ -26,5 +26,5 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # added by Miniconda3 installer
 export PATH="/Users/tylerbuchea/miniconda3/bin:$PATH"
 
-# Init jenv
+# Init jenv (Java)
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi

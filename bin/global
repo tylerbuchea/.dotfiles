@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+const fs = require('fs').promises;
+
+main();
+
+async function main() {
+  const [fsReaddirError, filenames] = await to(fs.readdir(__dirname));
+  if (fsReaddirError) return console.error(fsReaddirError);
+
+  const scriptnames = filenames
+    .filter(name => name[0] !== '.')
+    .filter(name => name !== 'global');
+
+  const [nodeBinary, script, subscript, ...rest] = process.argv;
+
+  if (!subscript) {
+    return console.error('Must define a subscript ie: global do-thing');
+  }
+
+  if (!scriptnames.includes(subscript)) {
+    console.log(scriptnames, subscript);
+    return console.error('Global not found', subscript);
+  }
+
+  const helpCommands = ['help', 'h', '--h', '--help'];
+  if (helpCommands.includes(subscript)) {
+    return console.log(scriptnames, null, 2);
+  }
+
+  const subscriptPath = `./${subscript}/index.js`;
+  require(subscriptPath);
+}
+
+// https://github.com/scopsy/await-to-js
+function to(promise, errorExt) {
+  return promise
+    .then(data => [null, data])
+    .catch(error =>
+      errorExt ? Object.assign(error, errorExt) : [err, undefined]
+    );
+}

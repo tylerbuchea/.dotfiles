@@ -7,9 +7,8 @@ async function main() {
   const [fsReaddirError, filenames] = await to(fs.readdir(__dirname));
   if (fsReaddirError) return console.error(fsReaddirError);
 
-  const scriptnames = filenames
-    .filter(name => name[0] !== '.')
-    .filter(name => name !== 'global');
+  const scriptIgnore = ['.DS_Store', 'global'];
+  const scriptnames = filenames.filter(name => !scriptIgnore.includes(name));
 
   const [nodeBinary, script, subscript, ...rest] = process.argv;
 
@@ -17,13 +16,13 @@ async function main() {
     return console.error('Must define a subscript ie: global do-thing');
   }
 
-  if (!scriptnames.includes(subscript)) {
-    return console.error('Global not found', subscript);
+  const helpCommands = ['help', 'h', '-h', '--help'];
+  if (helpCommands.includes(subscript)) {
+    return console.log(JSON.stringify(scriptnames, null, 2));
   }
 
-  const helpCommands = ['help', 'h', '--h', '--help'];
-  if (helpCommands.includes(subscript)) {
-    return console.log(scriptnames, null, 2);
+  if (!scriptnames.includes(subscript)) {
+    return console.error('Global not found', subscript);
   }
 
   const subscriptPath = `./${subscript}/index.js`;
@@ -34,7 +33,5 @@ async function main() {
 function to(promise, errorExt) {
   return promise
     .then(data => [null, data])
-    .catch(error =>
-      errorExt ? Object.assign(error, errorExt) : [err, undefined]
-    );
+    .catch(error => [Object.assign(error, errorExt), undefined]);
 }

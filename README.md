@@ -3,12 +3,15 @@
 ## The Coolest
 
 ### Install iTerm2
+
 https://www.iterm2.com/
 
 ### Install ZSH
+
 https://github.com/robbyrussell/oh-my-zsh
 
 ### Add Theme
+
 https://github.com/wesbos/Cobalt2-iterm
 
 ### Clone Repo into ~
@@ -26,7 +29,7 @@ subl ~/.dotfiles
 ### Add to .zshrc
 
 ```
-echo "source ~/.dotfiles/.includes" >> ~/.zshrc
+echo "source ~/.dotfiles/includes" >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -35,7 +38,7 @@ source ~/.zshrc
 **Copy credentials and change them to your own**
 
 ```
-cp ~/.dotfiles/.credentials_example ~/.dotfiles/.credentials
+cp ~/.dotfiles/credentials_example ~/.dotfiles/credentials
 ```
 
 ### Plugins
@@ -47,6 +50,7 @@ plugins=(git z)
 ```
 
 ### Why ZSH?
+
 **Cuz this:**
 
 http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692

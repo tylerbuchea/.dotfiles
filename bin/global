@@ -18,7 +18,6 @@ async function main() {
   }
 
   if (!scriptnames.includes(subscript)) {
-    console.log(scriptnames, subscript);
     return console.error('Global not found', subscript);
   }
 

@@ -29,6 +29,12 @@ function ca() {
 	cd $1
 }
 
+# Edit dotfiles
+function dotfiles() {
+	code --add ~/.dotfiles
+	cd  ~/.dotfiles
+}
+
 # Docker SSH
 
 function dssh() {

@@ -1,48 +1,14 @@
 # Git Commands
-alias gpersist="git config credential.helper 'cache --timeout=3600'"
-# alias gs="git status"
-# alias gr="git reset ."
-# gc() { git commit -m "$1"; }
-# gst() { git subtree push --prefix "$1" origin "$2"; }
 alias gpst="git subtree push --prefix dist origin dist"
 alias gpgp="git subtree push --prefix dist origin gh-pages"
 alias gds="git diff --stat"
 alias gitwho="git shortlog -s -n"
-# alias gb="git branch"
-# alias gdt="git difftool"
-# alias gmt="git mergetool"
-# alias gcm="git commit -m \"\""
+alias prevtags="git tag --sort=taggerdate | tail -n3"
 
-# General Commands
+ # General Commands
 alias sourcez="source ~/.zshrc"
 alias c="clear"
-# alias t="trash"
 # alias lz='find . -maxdepth 1 -type d -mindepth 1 -exec du -hs {} \'
 
 # Rhombus commands
 alias webapp="gradle bootRun -Dspring.profiles.active=integration,remotedev,frontenddev"
-
-# ESLint
-
-# Ableton
-alias ableton="/Users/tylerbuchea/Desktop/Ableton/ableton/start-ableton.sh"
-
-# alias eslintrc="npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-react eslint && echo '\''{ extends: [airbnb], }'\'' > .eslintrc"
-
-# React Native
-alias rnlogios="react-native log-ios"
-alias rnlogand="react-native log-android"
-alias rnadb="adb reverse tcp:8081 tcp:8081"
-
-# PostgreSQL
-alias psql-start="pg_ctl -D /usr/local/var/postgres -l logfile start"
-alias psql-stop="pg_ctl -D /usr/local/var/postgres -l logfile stop"
-
-# Peerflix
-alias peerflix-clear="rm -rf /tmp/torrent-stream/*"
-
-# Markdown Converter
-alias md="markdown-pdf"
-
-# View Last 3 Git Tags
-alias prevtags="git tag --sort=taggerdate | tail -n3"

@@ -1,7 +1,11 @@
 # Changelog
 function changelog() {
-	git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
-	git log --after="$(date -v-${1:7}d '+%Y-%m-%d')" --oneline | pbcopy
+	git log --pretty=format:"%d %C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(green)%Creset %s-%an" --date=short --after="$(date -v-14d '+%Y-%m-%d')"
+}
+
+# Git Search
+function gitsearch() {
+	git log --all --grep=$1
 }
 
 # Determine size of a file or total size of a directory

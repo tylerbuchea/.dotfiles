@@ -5,7 +5,7 @@ alias gds="git diff --stat"
 alias gitwho="git shortlog -s -n"
 alias prevtags="git tag --sort=taggerdate | tail -n3"
 
- # General Commands
+# General Commands
 alias sourcez="source ~/.zshrc"
 alias c="clear"
 # alias lz='find . -maxdepth 1 -type d -mindepth 1 -exec du -hs {} \'
